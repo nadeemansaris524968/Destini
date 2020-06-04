@@ -27,7 +27,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="n09-hR-Elw" userLabel="Story-Label">
                                                 <rect key="frame" x="20" y="0.0" width="374" height="568"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -55,6 +55,9 @@
                                                         <state key="normal" title="Choice 1" backgroundImage="choice1Background">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="choiceMade:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5mP-p9-77A"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="afR-qC-nwr">
                                                         <rect key="frame" x="0.0" y="120" width="374" height="100"/>
@@ -65,6 +68,9 @@
                                                         <state key="normal" title="Choice 2" backgroundImage="choice2Background">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="choiceMade:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jzd-hY-kYV"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <variation key="heightClass=compact-widthClass=compact" axis="horizontal"/>
@@ -98,6 +104,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="choice1Btn" destination="pkj-F5-Vbn" id="Xo0-qv-zcg"/>
+                        <outlet property="choice2Btn" destination="afR-qC-nwr" id="en5-n5-kc2"/>
                         <outlet property="storyLabel" destination="n09-hR-Elw" id="vo4-tr-veX"/>
                     </connections>
                 </viewController>
