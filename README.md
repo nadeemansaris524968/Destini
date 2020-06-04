@@ -1,6 +1,12 @@
 # Destini-iOS13
 Choice based thriller story iOS 13 app. Choice wisely.
 
+<div align="center">
+<img src="Documentation/app-screen-1.png" width="400px"</img>
+<img src="Documentation/app-screen-2.png" width="400px"</img>
+<img src="Documentation/app-screen-3.png" width="400px"</img>
+</div>
+
 ## Story Strings
 ```
         Story(
